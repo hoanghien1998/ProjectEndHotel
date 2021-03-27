@@ -65,7 +65,7 @@ class RoomtypeController extends Controller
                 $data['images'] = $image;
             }
         }
-        // Roomtype::where('id',$id)->update($data);
+        Roomtype::where('id',$id)->update($data);
         return $request;
     }
 
