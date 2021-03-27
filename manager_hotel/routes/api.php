@@ -22,5 +22,14 @@ Route::get('/roomtype/viewRoomType', 'RoomtypeController@index');
 Route::put('/roomtype/updateRoomType/{id}', 'RoomtypeController@update');
 Route::delete('/roomtype/deleteRoomType/{id}', 'RoomtypeController@delete');
 
+Route::post('/room/storeRoom', 'RoomController@store');
+Route::get('/room/viewRoom', 'RoomController@index');
+Route::put('/room/updateRoom/{id}', 'RoomController@update');
+Route::delete('/room/deleteRoom/{id}', 'RoomController@delete');
+
+
+
+
+
 
 

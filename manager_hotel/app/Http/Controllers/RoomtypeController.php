@@ -72,7 +72,7 @@ class RoomtypeController extends Controller
     public function delete($id){
         $roomtype=Roomtype::find($id);
         $roomtype->delete();
-        return redirect('api/roomtype/viewRoomType')->with('status','xóa thành công');
+        return redirect('api/room/viewRoom')->with('status','xóa thành công');
     }
 
 }
